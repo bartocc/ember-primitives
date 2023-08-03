@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "ember-primitives": "workspace:*",
-    "ember-resources": "^6.1.1",
+    "ember-resources": "^6.3.1",
     "qunit-assertions-extra": "^1.0.3"
   },
   "dependenciesMeta": {
@@ -59,7 +59,7 @@
     "broccoli-asset-rev": "^3.0.0",
     "concurrently": "^8.2.0",
     "ember-auto-import": "2.6.1",
-    "ember-cli": "~5.0.0",
+    "ember-cli": "~5.1.0",
     "ember-cli-app-version": "^6.0.1",
     "ember-cli-babel": "^7.26.11",
     "ember-cli-dependency-checker": "^3.3.2",
@@ -73,7 +73,7 @@
     "ember-modifier": "^4.1.0",
     "ember-page-title": "^7.0.0",
     "ember-qunit": "^7.0.0",
-    "ember-resolver": "^10.1.1",
+    "ember-resolver": "^11.0.0",
     "ember-source": "~5.1.2",
     "ember-source-channel-url": "^3.0.0",
     "ember-template-imports": "^3.4.2",
@@ -88,15 +88,15 @@
     "loader.js": "^4.7.0",
     "pnpm-sync-dependencies-meta-injected": "0.0.9",
     "prettier": "^2.8.7",
-    "prettier-plugin-ember-template-tag": "^0.3.2",
+    "prettier-plugin-ember-template-tag": "^1.0.0",
     "qunit": "^2.19.4",
     "qunit-dom": "^2.0.0",
-    "stylelint": "^15.9.0",
-    "stylelint-config-standard": "^33.0.0",
+    "stylelint": "^15.10.2",
+    "stylelint-config-standard": "^34.0.0",
     "stylelint-prettier": "^3.0.0",
     "tracked-built-ins": "^3.1.1",
     "typescript": "^5.1.6",
-    "webpack": "^5.88.1"
+    "webpack": "^5.88.2"
   },
   "engines": {
     "node": "14.* || 16.* || >= 18"
