@@ -38,8 +38,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.22.5",
-    "@embroider/addon-shim": "^1.8.5",
-    "@embroider/macros": "1.12.2",
+    "@embroider/addon-shim": "^1.8.6",
+    "@embroider/macros": "1.13.1",
     "@floating-ui/dom": "^1.4.3",
     "ember-velcro": "^2.1.0",
     "tracked-toolbox": "^2.0.0"
