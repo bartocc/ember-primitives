@@ -1,8 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Service from '@ember/service';
 
-import { createTabster, getDeloser, getMover, getTabster } from 'tabster';
-
 /**
  * @internal
  */
@@ -12,7 +10,7 @@ export default class EmberPrimitivesSetup extends Service {
   /**
    * Sets up required features for accessibility.
    */
-  setup = ({
+  setup = async ({
     tabster,
     setTabsterRoot,
   }: {
@@ -37,16 +35,19 @@ export default class EmberPrimitivesSetup extends Service {
       return;
     }
 
+    const { createTabster, getTabster } = await import('tabster');
     let existing = getTabster(window);
 
-    this.#setupTabster(existing ?? createTabster(window));
+    await this.#setupTabster(existing ?? createTabster(window));
 
     if (setTabsterRoot) {
       document.body.setAttribute('data-tabster', '{ "root": {} }');
     }
   };
 
-  #setupTabster = (tabster: ReturnType<typeof createTabster>) => {
+  #setupTabster = async (tabster: ReturnType<typeof createTabster>) => {
+    const { getMover, getDeloser } = await import('tabster');
+
     getMover(tabster);
     getDeloser(tabster);
   };
